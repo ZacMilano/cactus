@@ -1,0 +1,6 @@
+/* Place the cactus in the center of the screen */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

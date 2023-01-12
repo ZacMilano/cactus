@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="resets.css">
-	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="resets.css" />
+		<link rel="stylesheet" href="style.css" />
 
-	<title>Cactus</title>
-</head>
-<body>
+		<title>Cactus</title>
+	</head>
 
-</body>
+	<body>
+		<div class="frame">
+			<div class="cactus-pot">
+				<div class="cactus">
+					<div class="cactus__trunk">
+						<!-- Top section; small arm between this one and the section below -->
+						<div class="cactus__trunk-section--crown">
+							<div
+								class="cactus__arm"
+								data-side="right"
+								data-placement="bottom"
+								data-size="small"
+							>
+								<div class="cactus__flower"></div>
+							</div>
+						</div>
+
+						<div class="cactus__trunk-section"></div>
+
+						<!-- Bottom section with large arm -->
+						<div class="cactus__trunk-section">
+							<div
+								class="cactus__arm"
+								data-side="left"
+								data-placement="center"
+								data-size="large"
+							>
+								<div class="cactus__flower"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="soil"></div>
+
+				<div class="pot">
+					<div class="pot__rim"></div>
+					<div class="pot__bowl"></div>
+					<div class="pot__plate"></div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
