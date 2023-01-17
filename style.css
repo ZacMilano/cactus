@@ -13,18 +13,18 @@ body {
 }
 
 .frame {
-	position: relative;
-
 	/* Place the cactus in the center of the frame */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
+	/* Frame shape */
 	width: 30em;
 	aspect-ratio: 3 / 4;
 
 	border-radius: 0.2em;
 
+	/* Frame drawing & shadows */
 	box-shadow:
 		/* Frame colors */
 		0 0 0.5em 1em var(--clr-frame-base),
