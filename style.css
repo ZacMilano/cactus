@@ -1,6 +1,37 @@
-/* Place the cactus in the center of the screen */
+/* Colors & common variables */
+:root {
+	--clr-frame-highlight: hsl(30, 26%, 35%);
+	--clr-frame-base: hsl(30, 24%, 43%);
+	--clr-shadows: black;
+}
+
+/* Place the frame in the center of the screen */
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.frame {
+	position: relative;
+
+	/* Place the cactus in the center of the frame */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 30em;
+	aspect-ratio: 3 / 4;
+
+	border-radius: 0.2em;
+
+	box-shadow:
+		/* Frame colors */
+		0 0 0.5em 1em var(--clr-frame-base),
+		0 0 0.5em 2em var(--clr-frame-highlight),
+		0 0 0 3em var(--clr-frame-base),
+		/* Back drop shadow */
+		0 2em 10em 2em var(--clr-shadows),
+		/* Inset shadow */
+		0 0 1.5em 0 var(--clr-shadows) inset;
 }
